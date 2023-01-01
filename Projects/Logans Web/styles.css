@@ -1,0 +1,147 @@
+@import 'utilities.css';
+:root{
+    --primary: rgb(29, 221, 189) ;
+    --backgrdark: rgb(12,12,12) ;
+    --white: rgb(250,250,250) ;
+    --secondary: rgb(0,59,50) ;
+    --backgrlight: rgb(208, 208, 208);
+    --backgrmid: rgb(49,54,57);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--backgrdark);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .2 ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+.bg-shape{
+    position:relative;
+    padding:50px;
+}
+.bg-shape:after{
+    content: '';
+    position:absolute;
+    width: 1100px;
+    height: 1100px;
+    background-color: #0e0e92;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    border-radius: 50%;
+    top:0;
+    right:0;
+    z-index: -1;
+    top: -90%;
+    left:-70%;
+}
+
+body{
+    background: var(--backgrdark) !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.hero{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.hero img{
+    width: 400px;
+}
+.hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .rigth h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .rigth h1 span{
+    color: var (--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section{
+    background: var(--backgrmid);
+    padding: 6rem;
+}
+section.about h1{
+    color:rgb(208, 208, 208);
+    margin-bottom: 1rem;
+    font-size:1.6rem;
+    font-weight:600;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--white);
+    line-height:1.9rem;
+    margin-bottom: 2rem;
+}
+section.about .socials a{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: 35px;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+}
+section.about .socials a:hover{
+    background: var(--white);
+}
+section.Skills{
+    background: rgb(0,59,50);
+}
+.skills-head{
+    color: rgb(0,59,50);
+    text-align:center;
+    margin-bottom:1rem;
+    line-height:0.5rem;
+    color:var(--primary);
+}
+.skills-head + p{
+    color: var(--white);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom:6rem;
+    font-weight: 500;
+}
+
+
