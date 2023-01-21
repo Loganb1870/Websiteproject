@@ -15,6 +15,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -36,6 +37,15 @@ header nav .left a:hover{
 header nav {
     padding: 2rem 0;
 }
+
+.prof1{
+    border: 5px solid black;
+    padding: 5px;
+    
+    width: 500px;
+    height:500px;
+    border-radius: 10%;
+}
 .bg-shape{
     position:relative;
     padding:50px;
@@ -43,17 +53,55 @@ header nav {
 .bg-shape:after{
     content: '';
     position:absolute;
-    width: 1100px;
-    height: 1100px;
+    width: 1000px;
+    height: 1000px;
     background-color: #0e0e92;
     background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
     background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-    border-radius: 50%;
+    border-radius: 10%;
     top:0;
     right:0;
     z-index: -1;
     top: -90%;
     left:-70%;
+}
+.boxed{
+    border: 5px solid black;
+    border-radius:5px white;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+}
+
+.boxed p{
+    color: black !important;
+}
+.boxedsklz{
+    justify-content: center;
+    border: 5px solid black;
+    border-radius:5px white;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+}
+.boxedsklz p{
+    color: var(--white);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom:6rem;
+    font-weight: 500;
+}
+.elment-roundsq{
+    border-radius:5px;
+}
+.element-trapezoid{
+    position: relative;
+    border-bottom:50px solid wheat;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    height:100%;
+    width: 200px;
+    left:10px;
+    top: 200;
 }
 
 body{
@@ -96,6 +144,9 @@ body{
     margin-bottom: 2rem;
 }
 section{
+    border:10px solid black;
+    border-top: transparent;
+    border-left:transparent;
     background: var(--backgrmid);
     padding: 6rem;
 }
@@ -115,19 +166,21 @@ section.about p{
     margin-bottom: 2rem;
 }
 section.about .socials a{
-    display:flex;
+    display:float;
     align-items: center;
     justify-content:center;
     width: 35px;
-    margin-right: 0.8rem;
-    border-radius: 50%;
+    margin-left: 0rem;
+    border-radius: 100%;
 }
 section.about .socials a:hover{
-    background: var(--white);
+border: 1px solid var(--white);
 }
 section.Skills{
     background: rgb(0,59,50);
+    
 }
+
 .skills-head{
     color: rgb(0,59,50);
     text-align:center;
